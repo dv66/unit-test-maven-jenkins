@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: AreaUtilsTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.007 s <<< FAILURE! - in AreaUtilsTest
-AreaUtilsTest  Time elapsed: 0.006 s  <<< ERROR!
-org.junit.platform.commons.JUnitException: @BeforeAll method 'void AreaUtilsTest.init()' must be static unless the test class is annotated with @TestInstance(Lifecycle.PER_CLASS).
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in AreaUtilsTest
