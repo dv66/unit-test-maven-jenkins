@@ -1,11 +1,11 @@
 node {
-  stage('===== Cleaning project ====='){
+  stage('Cleaning project'){
       sh "mvn clean"
   }
-   stage('===== Test project ====='){
+   stage('Test project'){
        sh "mvn test"
    }
-   stage('===== Deploy project ====='){
+   stage('Deploy project'){
        sh "mvn package"
    }
 }
