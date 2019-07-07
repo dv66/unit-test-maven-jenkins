@@ -1,11 +1,21 @@
-node {
-  stage('Cleaning project'){
-      sh "mvn clean -f unit-test-maven-jenkins"
-  }
-   stage('Test project'){
-       sh "mvn test -f unit-test-maven-jenkins"
-   }
-   stage('Deploy project'){
-       sh "mvn package -f unit-test-maven-jenkins"
-   }
+pipeline {
+    agent any 
+    stages {
+        stage('Clone Repo') { 
+            steps {
+                sh "mvn clean"
+                // sh "mvn clean"
+            }
+        }
+        stage('Test') { 
+            steps {
+                sh "mvn test" 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                sh "mvn package"
+            }
+        }
+    }
 }
